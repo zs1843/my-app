@@ -4,21 +4,30 @@
   "description": "this is a repo for testing webpack",
   "main": "index.js",
   "scripts": {
+    "start": "node start",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack src/app.js dist/bundle.js"
+    "build": "webpack-dev-server --mode development",
+    "build:prod": "webpack -p"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/zs1843/webpack_test.git"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "zhangshun",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/zs1843/webpack_test/issues"
   },
   "homepage": "https://github.com/zs1843/webpack_test#readme",
   "devDependencies": {
     "webpack": "^4.16.0",
-    "webpack-cli": "^3.0.8"
+    "webpack-cli": "^3.0.8",
+    "webpack-dev-server": "^3.1.4",
+    "webpack-server": "^0.1.2"
+  },
+  "dependencies": {
+    "css-loader": "^1.0.0",
+    "js-loader": "^0.1.1",
+    "style-loader": "^0.21.0"
   }
 }
