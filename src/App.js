@@ -11,11 +11,6 @@ class App extends Component {
 
   componentDidMount(){
     this.doPromise();
-    // var svgCaptcha = require('svg-captcha');
-
-// var captcha = svgCaptcha.create();
-
-// console.log(captcha);
   }
 
   showModal = () => {
@@ -46,7 +41,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-      dasd
+        <input type="text" />
       </div>
     );
   }
